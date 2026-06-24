@@ -55,25 +55,25 @@ Document at least 3 bugs you found. Add rows as needed.
     There is no lower bound/floor on score, so a first wrong guess that is too low will drop the score to -5`
 
     Verification:
-    I am still unsure of what the anwers of this is, since it only answered in the context of the code/application itself rather than general knowledge. If I'd implement the change for the supposed bug fix, the game would be incorrect and would not return the right score.
+  - I am still unsure of what the anwers of this is, since it only answered in the context of the code/application itself rather than general knowledge. If I'd implement the change for the supposed bug fix, the game would be incorrect and would not return the right score.
 
 ---
 
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
-    I decided whethere the (too low/too high) bug was fixed by playing the game again. While know the actual secret number, I double checked the hint was correct as I was making guess attempts.
+  - I decided whethere the (too low/too high) bug was fixed by playing the game again. While know the actual secret number, I double checked the hint was correct as I was making guess attempts.
 - Describe at least one test you ran (manual or using pytest) and what it showed you about your code.
-  Using pytest, I ran some tests for the check_guess function to test that bug was fixed and logic was correct. What it showed about the code was that the secret_number could possibly be an number or a string and those two cases need to be considered to be able to return the correct hint. 
+  - Using pytest, I ran some tests for the check_guess function to test that bug was fixed and logic was correct. What it showed about the code was that the secret_number could possibly be an number or a string and those two cases need to be considered to be able to return the correct hint. 
 - Did AI help you design or understand any tests? How?
-    AI did help me to design the test in `test_game_logic.py`. I added to the prompt what tests to add for the bug fix implemented: `Generate a `pytest` case in `test/test_game_logic.py` that targets the bug fix for the too low/too high hint string in check_guess.` One thing I would have liked to do differently, was to figure out what cases to test for myself and it to the prompt. 
+  - AI did help me to design the test in `test_game_logic.py`. I added to the prompt what tests to add for the bug fix implemented: `Generate a `pytest` case in `test/test_game_logic.py` that targets the bug fix for the too low/too high hint string in check_guess.` One thing I would have liked to do differently, was to figure out what cases to test for myself and it to the prompt. 
 
 ---
 
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
-  Streamlit reruns help to run a set of instructions immediately. Session state is one way to share certain variables in those instructions between each rerun and for each session.
+  - Streamlit reruns help to run a set of instructions immediately. Session state is one way to share certain variables in those instructions between each rerun and for each session.
 
 ---
 
@@ -83,6 +83,6 @@ Document at least 3 bugs you found. Add rows as needed.
   - This could be a testing habit, a prompting strategy, or a way you used Git.
   One habit that I would like to reuse in future labs and project is prompting strategy. Throughout the labs, Ive noticed we spent most of the time gathering requirement and thinking and planning the system architecture before prompting AI. This is a great approach compared to just jumping into AI prompting "Fix this". 
 - What is one thing you would do differently next time you work with AI on a coding task?
-  One thing I would do differently next time I work with AI on a coding task, is actually spend some time thinking what is I am requesting and drafting detailed prompts before submitting it to AI. This will helpme strengthen my problem-solving and critical thinking ability. 
+  - One thing I would do differently next time I work with AI on a coding task, is actually spend some time thinking what is I am requesting and drafting detailed prompts before submitting it to AI. This will helpme strengthen my problem-solving and critical thinking ability. 
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
-  This project chnaged the way I think about AI generated code as before I believed with using AI you can ufortunately loose critical thinking ability as it's doing the work for you. But now I think it has really help me to spend more time planning before touching code and/or using AI. 
+  - This project chnaged the way I think about AI generated code as before I believed with using AI you can ufortunately loose critical thinking ability as it's doing the work for you. But now I think it has really help me to spend more time planning before touching code and/or using AI. 
